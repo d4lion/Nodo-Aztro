@@ -11,7 +11,7 @@
 Actualmente me encuentro cursando la ingeniería informática en la Unal, me apasiona el mundo del hardware🖥️ 
 y más aún el del software🧑‍💻. Uno de mis hobbies favoritos aparte de codear💻, es practicar natación🏊‍♂️ y jugar basketball🏀.
 
-## Contacto Institucional
+## Contacto Institucional 📧
   <p>
     Por este medio puedes contactarme para hacerme llegar algúna actualización importante,
     duda, pregunta o aporte.
