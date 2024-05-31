@@ -4,7 +4,7 @@
 </div>
 
 <h1 align="center" >
-  Hola 👋, mi nombre es <a href="https://daliondev.online" target="_blank" >Danniel</a>
+  Hola 👋, mi nombre es <a href="https://daliondev.online">Danniel</a>
 </h1>
 
 
