@@ -1,83 +1,180 @@
 :root {
-    --bg-color: #1b1d1f;
-    --title-color: #8e5c00;
-    --text-color: #FBFBFB;
+    --azul-princiapl: #1345FA;
+    --azul-secundario: #00229D;
+    --amarillo-principal: #ffea08;
+    --text-color: #ECE8EF;
+    --texto-color-secundario: #1b1b1d;
 }
 
-html {
-    background-color: var(--bg-color);
+/* roboto-latin-400-normal */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-400-normal.ttf) format('truetype');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* roboto-latin-700-normal */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-700-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/roboto@latest/latin-700-normal.ttf) format('truetype');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+body {
+    background-color: var(--azul-princiapl);
     color: var(--text-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
 }
-
-select {
-    padding: 10px;
-    border-radius: 10px
-}
-
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 100%;
+}
+
+/* NAVEGACION */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-container {
     display: grid;
-    place-content: center;
+    place-items: center;
+}
+
+.img-nodo-eafit {
+    height: 50px;
+    margin-left: 1rem;
+}
+
+@media (max-width: 800px) {
+    .img-nodo-eafit {
+        height: 40px;
+        margin-left: 0.5rem;
+    }
+
+
 
 }
 
-input {
-  border: none;
-  font-size: 16px;
-  width: 100%;
-  padding: 15px 0;
-  background-color: white;
-  color: #64696d;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-  margin-bottom: 30px;
-  border-radius: 12px;;
+.header-nav-section {
+    & > ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        font-weight: 700;
+        font-family: "Roboto";
+        font-size: 17px;
+        gap: 1rem;
+
+        & > li > a {
+            color: var(--text-color);
+            text-decoration: none;
+
+            &:hover {
+                border-bottom: 2px solid var(--amarillo-principal);
+            }
+        }
+    }
 }
+
+/* FORMULARIO */
+
+form {
+    background: rgb(30, 100, 230);
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 7px rgba(99,187,237,1);
+    margin: 1rem;
+}
+
+.field-datos-personales {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+
+    & > .field-input {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+.field-input {
+    & > input, select {
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid white;
+    }
+
+    & > textarea {
+        padding: 10px;
+        height: 20px;
+        max-height: 20px;
+        max-width: 1fr;
+        resize: none;
+        border-radius: 5px;
+    }
+
+}
+
+
 
 fieldset {
-    border-radius: 13px;
-    border: 3px solid var(--title-color);
-    & > legend {
-        font-size: 20px;
-    }
-}
-
-label {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-container {
-    width: 600px;
-
-}
-
-.form-personal-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-buttons {
-    display: flex;
-    justify-content: space-around
-
-}
-
-button {
-    margin: 1rem;
-    width: 130px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: var(--title-color);
-    color: var(--text-color);
     border: none;
-    transition: background-color, color 0.5s ease;
-
-    &:hover {
-        background-color: #a0782c;
-
+    & > legend {
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-align: center;
     }
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    height: 40px;
+    
+    & > button {
+        background-color: #ffd000dd;
+        color: #001563;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 17px;
+        cursor: pointer;
+        width: 150px;
+        height: 40px;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #ffd000b2;
+        }
+    }
+}
+
+.field-input-group-carrera {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.title {
+    margin: 0;
 }

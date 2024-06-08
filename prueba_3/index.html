@@ -3,142 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de inscripción</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nodo | Registro</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <header class="nav-bar">
+        <div class="img-container">
+            <img 
+                src="../public/images/prueba_3/logo-nodo-eafit.png"     
+                alt="logo nodo eafit"
+                class="img-nodo-eafit"
+            >
+        </div>
+        <nav class="header-nav-section">
+            <ul>
+                <li>
+                    <a 
+                        target="_blank" href="https://daliondev.online">
+                        Sobre mi
+                    </a>
+                </li>
+
+                <li>
+                    <a target="_blank" href="mailto:d4lion.dev@gmail.com">
+                        Contactos
+                    </a>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://github.com/d4lion" class="github-logo">
+                        <img 
+                        src="../public/images/prueba_3/github-mark-white.svg" 
+                        alt="logo github d4lion"
+                        height="20px"
+                        >
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1 style="text-align: center;">Formulario de inscripción</h1>
-        <form action="none" method="get" class="form-container"> 
-            <fieldset class="form-personal-section">
-                <legend>Datos personales</legend>
-                <label>
-                    Nombre:
-                    <input 
-                    type="text" 
-                    name="userName" 
-                    placeholder="Daniel"
-                    required
-                    >
-                </label>
-                <label>
-                    Apellido:
-                    <input 
-                    type="text" 
-                    name="userLastName" 
-                    placeholder="Martiez"
-                    required
-                    >
-                </label>
-                <label>
-                    Correo:
-                    <input 
-                    type="email" 
-                    name="userEmail" 
-                    placeholder="support@eafit.edu.co"
-                    required
-                    >
-                </label>
-                <label>
-                    Direccion:
-                    <input 
-                    type="text" 
-                    name="userAdress" 
-                    placeholder="Cra. 48 #7 Sur51"
-                    >
-                </label>
-                <div style="display: flex; justify-content: space-evenly;">
-                    <label>
-                        Pais:
-                        <select name="contry" required>
-                            <option value="Colombia">Colombia</option>
-                        </select>
-                    </label>
-                    <label>
-                        Departamento:
-                        <select name="departamentos">
-                            <option value="Amazonas" name="Amazonas">Amazonas</option>
-                            <option value="Antioquia" name="Antioquia">Antioquia</option>
-                            <option value="Arauca" name="Arauca">Arauca</option>
-                            <option value="Atlántico" name="Atlántico">Atlántico</option>
-                            <option value="Bolívar" name="Bolívar">Bolívar</option>
-                            <option value="Boyacá" name="Boyacá">Boyacá</option>
-                            <option value="Caldas" name="Caldas">Caldas</option>
-                            <option value="Caquetá" name="Caquetá">Caquetá</option>
-                            <option value="Casanare" name="Casanare">Casanare</option>
-                            <option value="Cauca" name="Cauca">Cauca</option>
-                            <option value="Cesar" name="Cesar">Cesar</option>
-                            <option value="Chocó" name="Chocó">Chocó</option>
-                            <option value="Córdoba" name="Córdoba">Córdoba</option>
-                            <option value="Cundinamarca" name="Cundinamarca">Cundinamarca</option>
-                            <option value="Guainía" name="Guainía">Guainía</option>
-                            <option value="Guaviare" name="Guaviare">Guaviare</option>
-                            <option value="Huila" name="Huila">Huila</option>
-                            <option value="La Guajira" name="La Guajira">La Guajira</option>
-                            <option value="Magdalena" name="Magdalena">Magdalena</option>
-                            <option value="Meta" name="Meta">Meta</option>
-                            <option value="Nariño" name="Nariño">Nariño</option>
-                            <option value="Norte de Santander" name="Norte de Santander">Norte de Santander</option>
-                            <option value="Putumayo" name="Putumayo">Putumayo</option>
-                            <option value="Quindío" name="Quindío">Quindío</option>
-                            <option value="Risaralda" name="Risaralda">Risaralda</option>
-                            <option value="San Andrés y Providencia" name="San Andrés y Providencia">San Andrés y Providencia</option>
-                            <option value="Santander" name="Santander">Santander</option>
-                            <option value="Sucre" name="Sucre">Sucre</option>
-                            <option value="Tolima" name="Tolima">Tolima</option>
-                            <option value="Valle del Cauca" name="Valle del Cauca">Valle del Cauca</option>
-                            <option value="Vaupés" name="Vaupés">Vaupés</option>
-                            <option value="Vichada" name="Vichada">Vichada</option>
-                        </select>
-                    </label>
+        <h1 class="title">Formulario de inscripción 🚀</h1>
+        <form action="#" method="get">
+            <fieldset class="field-datos-personales">
+                <div class="field-input">
+                    <label for="userName">Nombre</label>
+                    <input
+                        type="text"
+                        id="userName"
+                        name="userName"
+                        placeholder="Primer nombre"
+                        required>
                 </div>
-                <label>
-                    Telefono:
-                    <input type="tel" name="userNumber">
-                </label>
-                <label>
-                    Descripcion personal
-                    <br>
-                    <textarea 
-                        name="userDescription" 
-                        maxlength="300"
-                    ></textarea>
-                </label>
+    
+                <div class="field-input">
+                    <label for="userLastName">Apellido</label>
+                    <input
+                        type="text"
+                        id="userLastName"
+                        name="userLastName"
+                        placeholder="Apellidos completos"
+                        required>
+                </div>
+    
+                <div class="field-input">
+                    <label for="userEmail">Correo</label>
+                    <input
+                        type="email"
+                        id="userEmail"
+                        name="userEmail"
+                        placeholder="Dirección de correo"
+                        required>
+                </div>
+    
+                <div class="field-input">
+                    <label for="userAddress">Dirección</label>
+                    <input
+                        type="text"
+                        id="userAddress"
+                        name="userAddress"
+                        placeholder="Dirección de residencia"
+                        >
+                </div>
+
+                <div class="field-input">
+                    <label for="country">País</label>
+                    <select name="country" id="country" required>
+                        <option value="colombia">Colombia</option>
+                    </select>
+                </div>
+    
+                <div class="field-input">
+                    <label for="departamentos">Departamento</label>
+                    <select name="departamentos" id="departamentos">
+                        <option value="Amazonas" name="Amazonas">Amazonas</option>
+                        <option value="Antioquia" name="Antioquia">Antioquia</option>
+                        <option value="Arauca" name="Arauca">Arauca</option>
+                        <option value="Atlántico" name="Atlántico">Atlántico</option>
+                        <option value="Bolívar" name="Bolívar">Bolívar</option>
+                        <option value="Boyacá" name="Boyacá">Boyacá</option>
+                        <option value="Caldas" name="Caldas">Caldas</option>
+                        <option value="Caquetá" name="Caquetá">Caquetá</option>
+                        <option value="Casanare" name="Casanare">Casanare</option>
+                        <option value="Cauca" name="Cauca">Cauca</option>
+                        <option value="Cesar" name="Cesar">Cesar</option>
+                        <option value="Chocó" name="Chocó">Chocó</option>
+                        <option value="Córdoba" name="Córdoba">Córdoba</option>
+                        <option value="Cundinamarca" name="Cundinamarca">Cundinamarca</option>
+                        <option value="Guainía" name="Guainía">Guainía</option>
+                        <option value="Guaviare" name="Guaviare">Guaviare</option>
+                        <option value="Huila" name="Huila">Huila</option>
+                        <option value="La Guajira" name="La Guajira">La Guajira</option>
+                        <option value="Magdalena" name="Magdalena">Magdalena</option>
+                        <option value="Meta" name="Meta">Meta</option>
+                        <option value="Nariño" name="Nariño">Nariño</option>
+                        <option value="Norte de Santander" name="Norte de Santander">Norte de Santander</option>
+                        <option value="Putumayo" name="Putumayo">Putumayo</option>
+                        <option value="Quindío" name="Quindío">Quindío</option>
+                        <option value="Risaralda" name="Risaralda">Risaralda</option>
+                        <option value="San Andrés y Providencia" name="San Andrés y Providencia">San Andrés y Providencia</option>
+                        <option value="Santander" name="Santander">Santander</option>
+                        <option value="Sucre" name="Sucre">Sucre</option>
+                        <option value="Tolima" name="Tolima">Tolima</option>
+                        <option value="Valle del Cauca" name="Valle del Cauca">Valle del Cauca</option>
+                        <option value="Vaupés" name="Vaupés">Vaupés</option>
+                        <option value="Vichada" name="Vichada">Vichada</option>
+                    </select>
+
+                </div>
+
+                <div class="field-input">
+                    <label for="userPhone">Telefono</label>
+                    <input
+                        type="number"
+                        id="userPhone"
+                        name="userPhone"
+                        placeholder="434-545-323"
+                        required>
+                </div>
+
+                <div class="field-input">
+                    <label for="userDescription">Descripción personal</label>
+                    <textarea
+                        name="userDescription"
+                        id="userDescription"
+                        placeholder="Mi nombre es ..."
+                        ></textarea>
+                </div>
             </fieldset>
-            <fieldset class="form-carrera-section">
-                <legend>Datos de inscripción</legend>
-                <label>
-                    ¿A qué carrera deseas inscribirte?
+
+            <fieldset class="field-datos-carrera">
+                <div class="field-input">
+                    <label for="categorias">
+                        ¿A qué carrera deseas inscribirte?
+                    </label>
                     <select name="categorias" required>
-                        <option value="CloudNative" name="CloudNative">Cloud Native</option>
-                        <option value="Frontend" name="Frontend">Frontend</option>
-                        <option value="Backend" name="Backend">Backend</option>
-                        <option value="Fundamentals" name="Fundamentals">Fundamentals</option>
-                        <option value="Python" name="Python">Python</option>
-                        <option value="MarketingDigital" name="MarketingDigital">Marketing Digital</option>
+                        <option value="" disabled selected>
+                            Seleccione una opción
+                        </option>
+
+                        <option value="CloudNative" name="CloudNative">
+                            Cloud Native
+                        </option>
+
+                        <option value="Frontend" name="Frontend">
+                            Frontend
+                        </option>
+
+                        <option value="Backend" name="Backend">
+                            Backend
+                        </option>
+
+                        <option value="Fundamentals" name="Fundamentals">
+                            Fundamentals
+                        </option>
+
+                        <option value="Python" name="Python">
+                            Python
+                        </option>
+
+                        <option value="MarketingDigital" name="MarketingDigital">
+                            Marketing Digital
+                        </option>
                     </select>
-                </label>
-                <label>
-                    Modalidad
-                    <select name="modalidad" required>
-                        <option value="presencial" name="presencial">Presencial</option>
-                        <option value="online" name="online">Online</option>
-                    </select>
-                </label>
-                <label>
-                     ¿Estás trabajando actualmente?
-                    <select name="trabajando">
-                        <option value="Si" name="Si">Si</option>
-                        <option value="No" name="No">No</option>
-                    </select>
-                </label>
+
+                </div>
+
+                <div class="field-input-group-carrera">
+                    <div class="field-input">
+                        <label for="modalidad">Modalidad</label>
+                        <div>
+                            <input 
+                                type="radio" 
+                                value="presencial" 
+                                name="tipoDeModalidad"
+                                required
+                                >
+                            <label for="presencial">Presencial</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                value="virtual"
+                                name="tipoDeModalidad"
+                                required
+                                >
+                            <label for="virtual">Virtual</label>
+                        </div>
+                    </div>
+    
+                    <div class="field-input">
+                        <label for="trabajando">
+                            ¿Estas trabajando?
+                        </label>
+                        <div>
+                            <input type="radio" value="Sí" name="userTrabajando">
+                            <label for="Sí">Sí</label>
+    
+                            </div>
+                            <input type="radio" value="No" name="userTrabajando">
+                            <label for="No">No</label>
+                    </div>
+                </div>
+
             </fieldset>
-            <div class="form-buttons">
-                <button type="submit">Enviar</button>
-                <button type="reset">Restablecer</button>
+
+            <div class="btn-container">
+                <button class="btn-submit">Enviar</button>
+                <button class="btn-reset">Restablecer</button>
             </div>
         </form>
+
     </main>
-    
+
+
 </body>
 </html>
