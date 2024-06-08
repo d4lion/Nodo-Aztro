@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nodo | Registro</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="../public/images/prueba_3/favicon-32x32-nodo.png" type="image/x-icon">
 </head>
 <body>
     <header class="nav-bar">
@@ -43,7 +44,6 @@
         </nav>
     </header>
     <main>
-        <h1 class="title">Formulario de inscripción 🚀</h1>
         <form action="#" method="get">
             <fieldset class="field-datos-personales">
                 <div class="field-input">
@@ -135,11 +135,15 @@
                 <div class="field-input">
                     <label for="userPhone">Telefono</label>
                     <input
-                        type="number"
+                        type="tel"
                         id="userPhone"
                         name="userPhone"
                         placeholder="434-545-323"
-                        required>
+                        required
+                        onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+                        maxlength="10"
+                        min="10"
+                        >
                 </div>
 
                 <div class="field-input">
@@ -229,8 +233,19 @@
             </fieldset>
 
             <div class="btn-container">
-                <button class="btn-submit">Enviar</button>
-                <button class="btn-reset">Restablecer</button>
+                <button
+                    class="btn-submit"
+                    type="submit"
+                    >
+                    Registrarse
+                </button>
+
+                <button 
+                    class="btn-reset"
+                    type="reset"
+                    >
+                    Restablecer
+                </button>
             </div>
         </form>
 
