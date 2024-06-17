@@ -1,0 +1,142 @@
+/*CORRECCIONES DE CONTENEDOR*/
+
+.cards-container .card-container:nth-child(2) .card .card-description {
+  margin-block-start: 0; /*Soy back no front :(*/
+}
+
+.cards-container .card-container:nth-child(3) .card .card-description {
+  margin-block-start: 10px; /*Soy back no front :(*/
+}
+
+.cards-container .card-container:nth-child(4) .card .card-description {
+  margin-block-start: 6px; /*Soy back no front :(*/
+}
+
+.container-cards-section {
+  height: 100%;
+  background-color: var(--neutral-900);
+  position: relative;
+  z-index: 3;
+
+  & .cards-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container-cards-section {
+  /*Estilo de las Cartas de la seccion de retos*/
+
+  & li {
+    list-style: none;
+    padding: 0;
+  }
+
+  /*ESTILOS DEL TITULO DE LA SECCION DE CARTAS*/
+  & > .cards-section-title-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  & .cards-section-title {
+    margin-block: 0;
+    border-bottom: rgb(255, 166, 0) 5px solid;
+    width: fit-content;
+
+    /*ESTILOS DE LA LETRA*/
+    color: var(--white);
+    text-align: center;
+    font-feature-settings: "liga" off;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 120% */
+    letter-spacing: -1.5px;
+  }
+}
+
+.card {
+  /*ELIMINAR ESTILOS DEL ANCHOR TAG*/
+  text-decoration: none;
+  color: inherit;
+
+  width: 400px;
+  min-height: 300px;
+  border-radius: 13px;
+  background: var(--white);
+  filter: drop-shadow(0px 0px 9px rgba(207, 207, 207, 0.72));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 16px rgba(207, 207, 207, 0.72));
+  }
+
+  & .card-icon {
+    margin-top: 26px;
+  }
+
+  & .card-title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+
+    & > h3 {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin: 0 5px;
+      width: 290px;
+    }
+    & > time {
+      color: rgba(22, 29, 47, 0.768);
+      font-feature-settings: "liga" off;
+
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  & .card-description {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-block: 0;
+    margin-block-start: 25px;
+  }
+}
+
+/*GESTION DEL GRID DE LAS CARDS SEGUN EL TAMAÑO DE PANTALLA*/
+
+@media (min-width: 768px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 72px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 72px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 72px;
+  }
+}
