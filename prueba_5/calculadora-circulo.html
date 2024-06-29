@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+
+    <!-- CSS Importaciones   -->
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/nav-bar.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!-- Importando la libreria de FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/47e6b79350.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h1 class="nav-bar__title">
+        <i class="fa-solid fa-calculator"></i>
+        CalculiFy
+      </h1>
+      <ul class="nav-bar__menu">
+        <li class="nav-bar__menu-item">
+          <a href="./index.html" class="nav-bar__menu-link">Rectangulo</a>
+        </li>
+
+        <li class="nav-bar__menu-item">
+          <a href="./calculadora-circulo.html" class="nav-bar__menu-link" active
+            >Circulo</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="main__title">Calcular area y perimetro de un circulo</h1>
+      <section>
+        <img
+          src="./img/area_del_círculo.png"
+          alt="imagen de como se ven los lados de un rectangulo"
+          class="rectangulo-imagen"
+        />
+        <form class="datos-rectangulo">
+          <div class="datos-rectangulo__input">
+            <label for="radio">Radio (r)</label>
+            <input
+              type="number"
+              id="radio"
+              name="radio"
+              placeholder="5 metros"
+              required
+            />
+          </div>
+
+          <div class="datos-rectangulo__input">
+            <label for="area">Area (A)</label>
+            <input
+              id="area"
+              name="area"
+              disabled
+              placeholder="Llena los datos Base y Altura"
+            />
+          </div>
+
+          <div class="datos-rectangulo__input">
+            <label for="perimetro">Perimetro (P)</label>
+            <input
+              id="perimetro"
+              name="perimetro"
+              disabled
+              placeholder="Llena los datos Base y Altura"
+            />
+          </div>
+
+          <button class="datos-rectangulo__button-calcular" id="btnCalcular">
+            Calcular
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./logic/circulo.js"></script>
+  </body>
+</html>
