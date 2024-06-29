@@ -1,0 +1,147 @@
+:root {
+  /*VARIABLES DE COLORES*/
+  --primary-color: #7934eb;
+  --secondary-color: #c479d9;
+  --background-color: #f5f5f9;
+  --secondary-background-color: #dad2e4;
+  --text-colot: #02082e;
+
+  /*HEAD TEXT FAMILY*/
+  --head-text-family: 'Inter Variable';
+  --head-text-weight: 400;
+  --head-text-size: 25px;
+
+  /* SHORT TEXT VARIABLES */
+  --short-text-family: 'Source Sans Pro';
+  --short-text-weight: 400;
+  --short-text-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding-block-start: 0;
+  padding-block-end: 0;
+}
+
+body {
+  /*COLORS*/
+  background-color: var(--background-color);
+  color: var(--text-colot);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 24px;
+
+  & > section {
+    background-color: var(--secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 13px;
+  }
+}
+
+.main__title {
+  /*Font Config*/
+  font-family: var(--head-text-family);
+  font-size: var(--head-text-size);
+  font-weight: var(--head-text-weight);
+
+  /*Padding*/
+  padding-block-end: 26px;
+}
+
+.rectangulo-imagen {
+  height: 150px;
+}
+
+.datos-rectangulo {
+  /*Responsividad del form*/
+  @media (min-width: 768px) {
+    width: 400px;
+  }
+  /* Medidas*/
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+
+  /* Margin */
+  margin-top: 26px;
+}
+
+.datos-rectangulo__input {
+  /*Font Config*/
+  font-family: var(--short-text-family);
+  font-size: var(--short-text-size);
+  font-weight: var(--short-text-weight);
+
+  /* Display*/
+  display: flex;
+  flex-direction: column;
+
+  & > label {
+    font-family: var(--head-text-family);
+    font-weight: 600;
+  }
+
+  & > input {
+    padding: 18px;
+    font-size: 16px;
+    border: var(--secondary-color) 2px solid;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 2px;
+
+    &:focus {
+      border: var(--primary-color) 2px solid;
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: var(--background-color);
+    }
+  }
+}
+
+.datos-rectangulo__button-calcular {
+  /*Font Config*/
+  font-family: var(--short-text-family);
+  font-size: var(--short-text-size);
+  font-weight: var(--short-text-weight);
+
+  /* Display*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* Button Config*/
+  padding: 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 2px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+
+  &:hover {
+    background-color: #7a34ebc6;
+  }
+}
+
+footer {
+  font-family: var(--short-text-family);
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  height: 30px;
+}
