@@ -1,0 +1,189 @@
+/*Definicion de variables de estilos globales*/
+
+:root {
+  --primary-color: #06072e;
+  --text-color: #f5f5f5;
+  --text-hover: #f5f5f5b7;
+}
+
+/*Reseteo de estilos globales*/
+
+body {
+  font-family: 'Inter Variable';
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+  color: var(--text-color);
+  height: 90vh;
+  box-sizing: border-box;
+
+  /*Centrar el contenido que será visualizado*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  & li {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  & ul {
+    padding-inline-start: 0;
+  }
+}
+
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.formulario-footer__imagen {
+  display: flex;
+  gap: 1rem;
+
+  & > p {
+    font-size: 20px;
+  }
+}
+
+.contenido-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.contenido-footer__icons {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+
+.contenido-footer__icons-item {
+  font-size: 36px;
+  transition: scale 0.3s ease;
+
+  &:hover {
+    scale: 1.2;
+    color: var(--text-hover);
+  }
+}
+
+.contenido-footer__nav-links-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.contenido-footer__nav-links-list-item {
+  transition: scale 0.3s ease;
+
+  & > a {
+    font-size: 16px;
+    font-weight: 200;
+    transition: font-weight 0.3s ease;
+  }
+
+  &:hover {
+    color: white;
+    scale: 1.1;
+
+    & > a {
+      font-weight: 400;
+    }
+  }
+}
+
+.formulario-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  gap: 1rem;
+}
+
+.formulario-footer__user-email {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & > label {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.formulario-footer__aceptacion-politicas {
+  display: flex;
+  width: 80%;
+
+  & > label {
+    font-size: 16px;
+    font-weight: 200;
+    padding-left: 11px;
+  }
+}
+
+.formulario-footer__aceptacion-politicas-checkbox {
+  cursor: pointer;
+  width: 48px;
+
+  &:checked {
+    background-image: url('./check-solid.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.formulario-footer__aceptacion-politicas-input {
+  height: 40px;
+  width: 60%;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--text-hover);
+  border-radius: 6px;
+}
+
+.formulario-footer__user-email-group-button-input {
+  & > button {
+    font-family: 'Inter Variable';
+    font-weight: 500;
+    color: var(--text-color);
+    height: 44px;
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    border-radius: 7px;
+    border: 1px solid var(--text-hover);
+
+
+    &:hover {
+      cursor: pointer;
+      background-color: #ffffff1a;
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  footer {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .formulario-footer {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 400px;
+  }
+}
