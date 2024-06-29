@@ -1,0 +1,21 @@
+name: Proof HTML
+
+on:
+  push:
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Out Repo
+        uses: actions/checkout@v4
+
+      - name: Run Proof HTML - Nu Validator
+        uses: anishathalye/proof-html@v2
+        with:
+          directory: ./
+      
+  
