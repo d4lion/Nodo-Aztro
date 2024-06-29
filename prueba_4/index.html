@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creacion de Footer</title>
+    <!-- Importando la libreria de FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/47e6b79350.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Importacion de los estilos -->
+    <link rel="stylesheet" href="./fonts.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <footer>
+      <div class="formulario-footer__imagen">
+        <img src="../public/images/main/logo-whitepenguin.svg" alt="" />
+        <p>D4lion</p>
+      </div>
+      <section class="contenido-footer">
+        <ul class="contenido-footer__icons">
+          <li class="contenido-footer__icons-item">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li class="contenido-footer__icons-item">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="contenido-footer__icons-item">
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li class="contenido-footer__icons-item">
+            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+          </li>
+          <li class="contenido-footer__icons-item">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+
+        <nav class="contenido-footer__nav-links">
+          <ul class="contenido-footer__nav-links-list">
+            <li class="contenido-footer__nav-links-list-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="contenido-footer__nav-links-list-item">
+              <a href="#">News</a>
+            </li>
+            <li class="contenido-footer__nav-links-list-item">
+              <a href="#">About</a>
+            </li>
+            <li class="contenido-footer__nav-links-list-item">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="contenido-footer__nav-links-list-item">
+              <a href="#">Our Team</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <form class="formulario-footer">
+        <div class="formulario-footer__user-email">
+          <label for="userEmail">
+            Mantente al tanto de las actualizaciones
+          </label>
+          <div class="formulario-footer__user-email-group-button-input">
+            <input
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              class="formulario-footer__aceptacion-politicas-input"
+              placeholder="dmartine1@eafit.edu.co"
+            />
+            <button>Suscribirse</button>
+          </div>
+        </div>
+        <div class="formulario-footer__aceptacion-politicas">
+          <input
+            type="checkbox"
+            name="aceptacionCorreos"
+            id="aceptacionCorreos"
+            class="formulario-footer__aceptacion-politicas-checkbox"
+            
+          />
+          <label for="aceptacionCorreos"
+            >Marcando esta casilla confirmas que deseas recibir correos
+            referentes al contenido de la empresa</label
+          >
+        </div>
+      </form>
+    </footer>
+  </body>
+</html>
