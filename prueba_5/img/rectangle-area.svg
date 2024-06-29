@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 8660.92 5080.32" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="TextBounds">
+<rect height="1307.18" transform="matrix(0.352734 -0 -0 0.352734 -1365.84 44.0761)" width="639.182" x="3872.17" y="-124.956"/>
+</clipPath>
+<clipPath id="TextBounds_2">
+<rect height="1307.18" transform="matrix(0.352734 -0 -0 0.352734 -7.10873 -875.962)" width="639.182" x="20.1533" y="2483.35"/>
+</clipPath>
+<clipPath id="TextBounds_3">
+<rect height="1307.22" transform="matrix(0.352734 -0 -0 0.352734 -876 -670)" width="765.687" x="2483.46" y="1899.45"/>
+</clipPath>
+<clipPath id="TextBounds_4">
+<rect height="1307.18" transform="matrix(0.352734 -0 -0 0.352734 -1888 -978)" width="639.182" x="5352.48" y="2772.63"/>
+</clipPath>
+<clipPath id="TextBounds_5">
+<rect height="1307.18" transform="matrix(0.352734 -0 -0 0.352734 -2797 -791)" width="764.874" x="7929.49" y="2242.49"/>
+</clipPath>
+</defs>
+<clipPath id="ArtboardFrame">
+<rect height="5080.32" width="8660.92" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer_x0020_1" vectornator:layerName="Layer_x0020_1">
+<path d="M1216.21 1434.51L7422.03 1434.51L7422.03 1434.51L7422.03 5046.3L7422.03 5046.3L1216.21 5046.3L1216.21 5046.3L1216.21 1434.51L1216.21 1434.51Z" fill="none" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="69.1513"/>
+<text clip-path="url(#TextBounds)" fill="#000000" font-family="Arial" font-size="400" opacity="1" stroke="none" text-anchor="start" transform="matrix(2.835 0 0 2.835 3872.17 -124.956)" vectornator:width="225.461" x="0" y="0">
+<tspan textLength="222.461" x="0" y="362">b</tspan>
+</text>
+<text clip-path="url(#TextBounds_2)" fill="#000000" font-family="Arial" font-size="400" opacity="1" stroke="none" text-anchor="start" transform="matrix(2.835 0 0 2.835 20.1533 2483.35)" vectornator:width="225.461" x="0" y="0">
+<tspan textLength="222.461" x="0" y="362">a</tspan>
+</text>
+<path d="M776.79 1460.03L929.88 1763.37L626.535 1763.37L776.79 1460.03ZM765.45 4788.31L765.45 1746.36L790.965 1746.36L790.965 4788.31L765.45 4788.31ZM776.79 5074.65L626.535 4771.31L929.88 4771.31L776.79 5074.65Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="none"/>
+<path d="M1216.21 1020.6L1516.72 870.345L1516.72 1170.86L1216.21 1020.6ZM7138.53 1034.78L1502.55 1034.78L1502.55 1006.42L7138.53 1006.42L7138.53 1034.78ZM7424.86 1020.6L7121.52 1170.86L7121.52 870.345L7424.86 1020.6Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="none"/>
+<path d="M1216.21 1434.51L1216.21 5046.3L7424.86 5046.3L7424.86 1434.51L1216.21 1434.51Z" fill="#ffebd6" fill-rule="evenodd" opacity="1" stroke="#009933" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="69.1513"/>
+<text clip-path="url(#TextBounds_3)" fill="#fc9324" font-family="Arial" font-size="400.43" opacity="1" stroke="none" text-anchor="start" transform="matrix(2.835 0 0 2.835 2483.46 1899.45)" vectornator:width="270.084" x="0" y="0">
+<tspan textLength="267.084" x="0" y="362">A</tspan>
+</text>
+<path d="M1216.21 5046.3L7424.86 1434.51" fill="none" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-dasharray="141.0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="27.6605"/>
+<text clip-path="url(#TextBounds_4)" fill="#000000" font-family="Arial" font-size="400" opacity="1" stroke="none" text-anchor="start" transform="matrix(2.835 0 0 2.835 5352.48 2772.63)" vectornator:width="225.461" x="0" y="0">
+<tspan textLength="222.461" x="0" y="362">d</tspan>
+</text>
+<text clip-path="url(#TextBounds_5)" fill="#009933" font-family="Arial" font-size="400" opacity="1" stroke="none" text-anchor="start" transform="matrix(2.835 0 0 2.835 7929.49 2242.49)" vectornator:width="269.797" x="0" y="0">
+<tspan textLength="266.797" x="0" y="362">P</tspan>
+</text>
+</g>
+</svg>
