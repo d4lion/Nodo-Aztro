@@ -1,14 +1,23 @@
 /*CORRECCIONES DE CONTENEDOR*/
 
-.cards-container .card-container:nth-child(2) .card .card-description {
+.cards-section__container
+  .card-section__card:nth-child(2)
+  .card
+  .card__description {
   margin-block-start: 0; /*Soy back no front :(*/
 }
 
-.cards-container .card-container:nth-child(3) .card .card-description {
+.cards-section__container
+  .card-section__card:nth-child(3)
+  .card
+  .card__description {
   margin-block-start: 10px; /*Soy back no front :(*/
 }
 
-.cards-container .card-container:nth-child(4) .card .card-description {
+.cards-section__container
+  .card-section__card:nth-child(4)
+  .card
+  .card__description {
   margin-block-start: 6px; /*Soy back no front :(*/
 }
 
@@ -48,7 +57,7 @@
     /*ESTILOS DE LA LETRA*/
     color: var(--white);
     text-align: center;
-    font-feature-settings: "liga" off;
+    font-feature-settings: 'liga' off;
     font-size: 60px;
     font-style: normal;
     font-weight: 700;
@@ -78,11 +87,11 @@
     filter: drop-shadow(0px 0px 16px rgba(207, 207, 207, 0.72));
   }
 
-  & .card-icon {
+  & .card__icon {
     margin-top: 26px;
   }
 
-  & .card-title {
+  & .card__title {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -97,7 +106,7 @@
     }
     & > time {
       color: rgba(22, 29, 47, 0.768);
-      font-feature-settings: "liga" off;
+      font-feature-settings: 'liga' off;
 
       font-size: 14px;
       font-style: normal;
@@ -106,7 +115,7 @@
     }
   }
 
-  & .card-description {
+  & .card__description {
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -118,7 +127,7 @@
 /*GESTION DEL GRID DE LAS CARDS SEGUN EL TAMAÑO DE PANTALLA*/
 
 @media (min-width: 768px) {
-  .cards-container {
+  .cards-section__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 72px;
@@ -126,7 +135,7 @@
 }
 
 @media (min-width: 1050px) {
-  .cards-container {
+  .cards-section__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 72px;
@@ -134,7 +143,7 @@
 }
 
 @media (min-width: 1400px) {
-  .cards-container {
+  .cards-section__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 72px;
