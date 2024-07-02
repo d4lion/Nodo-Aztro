@@ -53,11 +53,12 @@
           alt="imagen de como se ven los lados de un rectangulo"
           class="rectangulo-imagen"
         />
-        <form class="datos-rectangulo">
+        <form class="datos-rectangulo" id="formulario-rectangulo">
           <div class="datos-rectangulo__input">
             <label for="base">Base (b)</label>
             <input
               type="number"
+              step="0.01"
               id="base"
               name="base"
               placeholder="5 metros"
@@ -69,6 +70,7 @@
             <label for="altura">Altura (a)</label>
             <input
               type="number"
+              step="0.01"
               id="altura"
               name="altura"
               placeholder="5 metros"
@@ -106,7 +108,11 @@
             />
           </div>
 
-          <button class="datos-rectangulo__button-calcular" id="btnCalcular">
+          <button
+            class="datos-rectangulo__button-calcular"
+            id="btnCalcular"
+            type="submit"
+          >
             Calcular
           </button>
         </form>
