@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculador Promedio</title>
+    <!-- Import de CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Import de librerias externas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <section class="contenedor">
+      <h1 class="contenedor__titulo">Calculadora de promedio</h1>
+      <hr />
+      <section class="contenedor__calculadora">
+        <div class="contenedor__calculadora-grafico">
+          <canvas
+            class="grafico__canvas"
+            id="grafico_promedio"
+            width="500"
+            height="450"
+          >
+          </canvas>
+        </div>
+        <div class="calculadora">
+          <form class="calculadora__formulario" id="datos_pruebas">
+            <div
+              class="calculadora__formulario-distancia-piscina calculadora__formulario-input"
+            >
+              <label for="distancia-piscina"
+                >Distancia de la piscina y/o tramo recorrido (m)</label
+              >
+              <input
+                type="number"
+                id="distancia-piscina"
+                value="100"
+                max="1000"
+                min="1"
+                step="0.5"
+                placeholder="Introduce distancia recorrida"
+              />
+            </div>
+
+            <div
+              class="calculadora__tiempo-prueba calculadora__formulario-input"
+            >
+              <label for="resultado_1">Resultado prueba 1</label
+              ><input
+                id="resultado_1"
+                type="number"
+                name="valor_prueba"
+                min="1"
+                max="420"
+                step="0.01"
+                placeholder="Introduce valor"
+                required
+              />
+            </div>
+
+            <div
+              class="calculadora__tiempo-prueba calculadora__formulario-input"
+            >
+              <label for="resultado_2">Resultado prueba 2</label
+              ><input
+                id="resultado_2"
+                type="number"
+                name="valor_prueba"
+                min="1"
+                max="420"
+                step="0.01"
+                placeholder="Introduce valor"
+                required
+              />
+            </div>
+
+            <div
+              class="calculadora__tiempo-prueba calculadora__formulario-input"
+            >
+              <label for="resultado_3">Resultado prueba 3</label
+              ><input
+                id="resultado_3"
+                type="number"
+                name="valor_prueba"
+                min="1"
+                max="420"
+                step="0.01"
+                placeholder="Introduce valor"
+                required
+              />
+            </div>
+
+            <div
+              class="calculadora__tiempo-prueba calculadora__formulario-input"
+            >
+              <label for="resultado_4">Resultado prueba 4</label
+              ><input
+                id="resultado_4"
+                type="number"
+                name="valor_prueba"
+                min="1"
+                max="420"
+                step="0.01"
+                placeholder="Introduce valor"
+                required
+              />
+            </div>
+
+            <div
+              class="calculadora__tiempo-prueba calculadora__formulario-input"
+            >
+              <label for="resultado_5">Resultado prueba 5</label
+              ><input
+                id="resultado_5"
+                type="number"
+                name="valor_prueba"
+                min="1"
+                max="420"
+                step="0.01"
+                placeholder="Introduce valor"
+                required
+              />
+            </div>
+
+            <div
+              class="calculadora__tiempo-prueba calculadora__formulario-input"
+            >
+              <label for="promedio">Promedio</label
+              ><input
+                id="promedio"
+                type="number"
+                name="valor_prueba"
+                disabled
+                min="1"
+                max="420"
+                step="0.01"
+                placeholder="Promedio de 
+                requiredlas pruebas"
+              />
+            </div>
+
+            <button type="submit" class="calculadora__button">Calcular</button>
+          </form>
+        </div>
+      </section>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
