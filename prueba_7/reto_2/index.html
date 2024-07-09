@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agronomo - reto 2</title>
+
+    <!-- Link de estilo -->
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Import de librerias externas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <div class="nav-container__title">
+        <h1>AgroCalc</h1>
+      </div>
+      <ul class="nav-container__links">
+        <li class="nav-container__link">
+          <a href="./como-calcular.html">Como Calcular</a>
+        </li>
+        <li class="nav-container__link">
+          <a href="https://d4liondev.online" target="_blank">About me</a>
+        </li>
+        <li class="nav-container__link">
+          <a
+            href="https://github.com/d4lion/Nodo_Aztro_Daniel_Martinez_Tamayo/tree/main/prueba_7/reto_2"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M7.02423 2.32984C7.77519 2.58423 8.4896 2.93589 9.14923 3.37584C10.0808 3.13775 11.0387 3.01814 12.0002 3.01984C12.9932 3.01984 13.9512 3.14384 14.8492 3.37484C15.5086 2.93531 16.2227 2.584 16.9732 2.32984C17.6702 2.09284 18.6632 1.70884 19.2532 2.36184C19.6532 2.80584 19.7532 3.54984 19.8242 4.11784C19.9042 4.75184 19.9232 5.57784 19.7132 6.39784C20.5162 7.43484 21.0002 8.67184 21.0002 10.0198C21.0002 12.0618 19.8942 13.8348 18.2572 15.0628C17.4694 15.6464 16.5956 16.1038 15.6672 16.4188C15.8812 16.9088 16.0002 17.4508 16.0002 18.0198V21.0198C16.0002 21.2851 15.8949 21.5394 15.7073 21.7269C15.5198 21.9145 15.2654 22.0198 15.0002 22.0198H9.00023C8.73501 22.0198 8.48066 21.9145 8.29312 21.7269C8.10559 21.5394 8.00023 21.2851 8.00023 21.0198V20.0288C7.04523 20.1458 6.24423 20.0418 5.56323 19.7528C4.85123 19.4508 4.35523 18.9828 3.98223 18.5348C3.62823 18.1108 3.24223 17.1548 2.68423 16.9688C2.5596 16.9273 2.44437 16.8617 2.34512 16.7757C2.24586 16.6896 2.16452 16.5849 2.10574 16.4674C1.98703 16.2302 1.96742 15.9555 2.05123 15.7038C2.13504 15.4521 2.3154 15.2441 2.55263 15.1253C2.78986 15.0066 3.06454 14.987 3.31623 15.0708C3.98223 15.2928 4.41623 15.7728 4.71323 16.1588C5.19323 16.7788 5.58323 17.5888 6.34323 17.9118C6.65623 18.0448 7.11523 18.1318 7.83323 18.0338L8.00023 17.9998C8.00214 17.4556 8.11547 16.9176 8.33323 16.4188C7.40482 16.1039 6.53104 15.6464 5.74323 15.0628C4.10623 13.8348 3.00023 12.0628 3.00023 10.0198C3.00023 8.67384 3.48323 7.43784 4.28423 6.40184C4.07423 5.58184 4.09223 4.75384 4.17223 4.11884L4.17723 4.08084C4.25023 3.49884 4.33523 2.81384 4.74323 2.36184C5.33323 1.70884 6.32723 2.09384 7.02323 2.33084L7.02423 2.32984Z"
+                fill="#1F2937"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main-section">
+      <section>
+        <h2 class="data-form__title">Calcular la cantidad de pesticida</h2>
+        <p class="data-form__description">
+          Calculadora para ver la cantidad de pesticida necesario para un
+          terreno de forma trapezoidal.
+        </p>
+        <div class="chart-container">
+          <canvas id="pesticida-grafica"></canvas>
+        </div>
+
+        <form class="data-form" id="form-data">
+          <div class="data-form__input app-input">
+            <label for="base">Base mayor (m)</label>
+            <input
+              type="number"
+              required
+              min="1"
+              max="1000000"
+              step="0.1"
+              id="base-mayor"
+            />
+          </div>
+
+          <div class="data-form__input app-input">
+            <label for="base-menor">Base pequeña (m)</label>
+            <input
+              type="number"
+              required
+              min="1"
+              max="1000000"
+              step="0.1"
+              id="base-menor"
+            />
+          </div>
+
+          <div class="data-form__input app-input">
+            <label for="altura">Altura (m)</label>
+            <input
+              type="number"
+              required
+              min="1"
+              max="1000000"
+              step="0.1"
+              id="altura"
+            />
+          </div>
+
+          <button type="submit">Calcular</button>
+        </form>
+        <div class="resultado">
+          <div class="resultado__input app-input">
+            <label for="resultado_area">Area del terreno</label>
+            <input
+              type="text"
+              name="resultado_area"
+              readonly
+              id="resultado_area"
+            />
+          </div>
+
+          <div class="resultado__input app-input">
+            <label for="resultado_area">Perimetro del terreno</label>
+            <input
+              type="text"
+              name="resultado_area"
+              readonly
+              id="resultado_perimetro"
+            />
+          </div>
+
+          <div class="resultado__input app-input">
+            <label for="resultado_area">Cantidad de pesticida</label>
+            <input
+              type="text"
+              name="resultado_pesticida"
+              readonly
+              id="resultado_pesticida"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./chart.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
