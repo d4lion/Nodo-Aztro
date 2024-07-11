@@ -4,3 +4,4 @@ test
 
 #python editor
 .idea
+__pycache__
