@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora | d4lion</title>
+    <link rel="shortcut icon" href="./img/calculator.ico" type="image/x-icon" />
+
+    <!-- CSS Importaciones   -->
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/nav-bar.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Importando la libreria de FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/47e6b79350.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h1 class="nav-bar__title">
+        <i class="fa-solid fa-calculator"></i>
+        CalculiFy
+      </h1>
+      <ul class="nav-bar__menu">
+        <li class="nav-bar__menu-item">
+          <a href="./index.html" class="nav-bar__menu-link" active>IMC</a>
+        </li>
+        <li class="nav-bar__menu-item">
+          <a
+            href="https://github.com/d4lion"
+            target="_blank"
+            class="nav-bar__menu-link"
+            ><i class="fa-brands fa-github fa-lg"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="main__title">Calculadora de salario</h1>
+      <section>
+        <form class="datos-rectangulo" id="formulario-rectangulo">
+          <div class="datos-rectangulo__input">
+            <label for="dias_trabajados">Días trabajados</label>
+            <input
+              type="number"
+              min="0"
+              step="1"
+              id="dias_trabajados"
+              name="dias_trabajados"
+              placeholder="2 Días"
+              required
+            />
+          </div>
+
+          <div class="datos-rectangulo__input">
+            <label for="horas_extra_diurnas">Horas extra diurnas</label>
+            <input
+              type="number"
+              step="1"
+              min="0"
+              id="horas_extra_diurnas"
+              name="horas_extra_diurnas"
+              placeholder="5 Horas"
+              value="0"
+            />
+          </div>
+
+          <div class="datos-rectangulo__input">
+            <label for="horas_extra_nocturna">Horas extra nocturnas</label>
+            <input
+              type="number"
+              step="1"
+              min="0"
+              id="horas_extra_nocturna"
+              name="horas_extra_nocturna"
+              placeholder="3 Horas"
+              value="0"
+            />
+          </div>
+
+          <div class="datos-rectangulo__input">
+            <label for="horas_extra_festivos">Horas extra festivos</label>
+            <input
+              type="number"
+              step="1"
+              min="0"
+              id="horas_extra_festivos"
+              name="horas_extra_festivos"
+              placeholder="2 Horas"
+              value="0"
+            />
+          </div>
+
+          <div class="datos-rectangulo__input">
+            <label for="input_salario_neto"
+              >Salario antes de deducciones (Neto)</label
+            >
+            <input id="input_salario_neto" name="input_salario_neto" disabled />
+          </div>
+
+          <div class="datos-rectangulo__input">
+            <label for="input_salario_bruto"
+              >Salario despues de deducciones (Bruto)</label
+            >
+            <input
+              id="input_salario_bruto"
+              name="input_salario_bruto"
+              disabled
+            />
+          </div>
+
+          <button
+            class="datos-rectangulo__button-calcular"
+            id="btnCalcular"
+            type="submit"
+          >
+            Calcular
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Derechos d4lion</p>
+      <a
+        href="https://github.com/d4lion/Nodo_Aztro_Daniel_Martinez_Tamayo/tree/main/prueba_7/reto_5"
+        target="_blank"
+        >Codigo aquí</a
+      >
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
