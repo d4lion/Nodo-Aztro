@@ -38,8 +38,8 @@ function calcularSalario({
 }
 
 function actualizarInputs({ element: e, data }) {
-  const monedaLocal = new Intl.NumberFormat().format(data);
-  e.value = `$${monedaLocal}`;
+  const monedaLocalParsed = new Intl.NumberFormat().format(data);
+  e.value = `$${monedaLocalParsed}`;
 }
 
 document
