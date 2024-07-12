@@ -1,0 +1,43 @@
+.nav-bar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-bar__title {
+  font-family: 'JetBrains Mono Variable';
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.nav-bar__menu {
+  display: flex;
+  gap: 20px;
+
+  & > li {
+    list-style: none;
+    padding-left: 0;
+
+    & > a {
+      text-decoration: none;
+      font-family: var(--short-text-family);
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text-colot);
+
+      &:hover {
+        color: var(--primary-color) !important;
+      }
+
+      &[active] {
+        color: var(--primary-color);
+      }
+    }
+  }
+  &:hover {
+    a {
+      color: var(--text-colot) !important;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora | d4lion</title>
+    <link rel="shortcut icon" href="./img/calculator.ico" type="image/x-icon" />
+
+    <!-- CSS Importaciones   -->
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/nav-bar.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Importando la libreria de FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/47e6b79350.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h1 class="nav-bar__title">
+        <i class="fa-solid fa-calculator"></i>
+        CalculiFy
+      </h1>
+      <ul class="nav-bar__menu">
+        <li class="nav-bar__menu-item">
+          <a href="./index.html" class="nav-bar__menu-link" active>IMC</a>
+        </li>
+        <li class="nav-bar__menu-item">
+          <a
+            href="https://github.com/d4lion"
+            target="_blank"
+            class="nav-bar__menu-link"
+            ><i class="fa-brands fa-github fa-lg"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="main__title">Calcular area de un rectangulo</h1>
+      <section>
+        <img
+          src="./img/img_imc.png"
+          alt="imagen de como se ven los lados de un rectangulo"
+          class="rectangulo-imagen"
+        />
+        <form class="datos-rectangulo" id="formulario-rectangulo">
+          <div class="datos-rectangulo__input">
+            <label for="altura">Altura (m) </label>
+            <input
+              type="number"
+              min="1"
+              step="0.1"
+              id="altura"
+              name="altura"
+              placeholder="1.80"
+              required
+            />
+          </div>
+
+          <div class="datos-rectangulo__input">
+            <label for="peso">Peso (kg)</label>
+            <input
+              type="number"
+              step="0.01"
+              min="1"
+              id="peso"
+              name="peso"
+              placeholder="80.5"
+              required
+            />
+          </div>
+
+          <div class="datos-rectangulo__input">
+            <label for="imc_input">IMC</label>
+            <input
+              id="imc_input"
+              name="imc_input"
+              disabled
+              placeholder="Llena los datos Peso y Altura"
+            />
+          </div>
+
+          <button
+            class="datos-rectangulo__button-calcular"
+            id="btnCalcular"
+            type="submit"
+          >
+            Calcular
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Derechos d4lion</p>
+      <a
+        href="https://github.com/d4lion/Nodo_Aztro_Daniel_Martinez_Tamayo/tree/main/prueba_5"
+        target="_blank"
+        >Codigo aquí</a
+      >
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
