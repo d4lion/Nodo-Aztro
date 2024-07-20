@@ -1,6 +1,6 @@
 # 🛠️ MAQUETACION ANGULAR BEM + SASS + RESPONSIVE
 
-Para ver la previsualización hacer <a href="https://d4lion.github.io/Nodo_Aztro_Daniel_Martinez_Tamayo/ng_challenges/challenge_1/">Click aquí</a>
+Para ver la previsualización hacer <a href="https://d4lion.github.io/Nodo_Aztro_Daniel_Martinez_Tamayo/ng_challenges/challenge_1/dist">Click aquí</a>
 
 ## 🧠 Planteamiento del problema
 
